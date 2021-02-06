@@ -9,13 +9,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void clickFunction(View view) {
-        EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
-        Log.i( "Info","Button pressed!");
-        Log.i("Values",nameEditText.getText().toString());
-        EditText passwordEditText = (EditText) findViewById(R.id.TextPassword);
-        Log.i("Password", passwordEditText.getText().toString());
-        Toast.makeText(this, "Hi there!", Toast.LENGTH_SHORT).show();
+    public void buttonClicked(View view) {
+        EditText personNameClick = (EditText) findViewById(R.id.PersonName);
+        Toast.makeText(this, "Hi " + personNameClick.getText().toString(), Toast.LENGTH_LONG).show();
     }
 
     @Override
